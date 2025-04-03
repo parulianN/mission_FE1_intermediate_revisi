@@ -1,0 +1,155 @@
+.box {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    box-sizing: border-box;
+    max-width: 1440px;
+    width: 100%;
+    height: auto;
+    
+    
+}
+
+
+.coverImage {
+    display: flex;
+    max-width: 100%;
+    height: auto;
+    
+}
+
+
+.content {
+    box-sizing: border-box;
+    position: absolute;
+    display: flex;
+    max-width: 1440px;
+    width: 100vw;
+    height: fit-content;
+    flex-direction: column;
+    gap: max(2.5rem,1rem);
+    padding-top: 15rem;
+    padding-right: 5rem;
+    padding-bottom: min(5rem,2rem);
+    padding-left: 5rem;
+    bottom: 0;
+}
+
+.content h1 {
+    display: flex;
+    background-color: none;
+    font-weight: 700;
+    max-width: fit-content;
+    font-size: clamp(1.5rem, 5vw, 3rem);
+    line-height: 59.2px;
+    letter-spacing: 0.2px;
+    background-color: none;
+    color: rgba(255, 255, 255, 1);
+}
+
+.content p {
+    background-color: transparent;
+    max-width: 600px;
+    width: 100%;
+    text-wrap: wrap;
+    font-weight: 400;
+    font-size: clamp(0.75rem, 2vw, 1.125rem);
+    line-height: 25.2px;
+    letter-spacing: 0.2px;
+    background-color: none;
+    color: rgba(255, 255, 255, 1);
+}
+
+.buttonHero {
+    display: flex;
+    justify-content: space-between;
+}
+
+.playButton {
+    display: flex;
+    gap: 20px;
+}
+
+.playButton .play {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(15, 30, 147, 1);
+    border: none;
+    border-radius: 48px;    
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22.4px;
+    letter-spacing: 0.2px;
+    cursor: pointer;
+    padding: 10px 20px 10px 20px;
+}
+
+.playButton .selengkapnya {
+    display: flex;
+    text-align: center;
+    background-color: rgba(34, 40, 42, 1);
+    border: none;
+    border-radius: 48px;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22.4px;
+    letter-spacing: 0.2px;
+    gap: 10px;
+    cursor: pointer;
+    padding: 10px 20px 10px 20px;
+}
+
+.playButton p, .volumeButton {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.473);
+    border-radius: 50%;
+}
+
+.buttonHero img {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .content {
+        padding: 30px 15px 15px 15px;
+        gap: 5px;
+    }
+
+    .content p {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        line-height: 16.8px;
+        overflow: hidden;
+    }
+
+    .playButton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .playButton .play, .playButton .selengkapnya {
+        padding: 5px 10px 5px 10px;
+    }
+    .playButton p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 30px;
+        height: 30px;
+    }
+
+}
